@@ -3,6 +3,14 @@
 
 module.exports = function (config) {
   config.set({
+    files: [
+      "./src/app/styles.css",
+      "./node_modules/bootstrap/dist/css/bootstrap.css",
+      "./node_modules/font-awesome/css/font-awesome.css",
+      "./node_modules/jquery/dist/jquery.min.js", 
+      "./node_modules/tether/dist/js/tether.min.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.js",
+    ],
     basePath: '',
     frameworks: ['jasmine', '@angular/cli'],
     plugins: [
