@@ -38,7 +38,7 @@ describe('MenuBarComponent', () => {
   });
 
   beforeEach(function () {
-    // $('a.dropdown-toggle').trigger('click');
+    $('a.dropdown-toggle').trigger('click');
   });
 
   it('confirm component loads dropdown in navbar', function() {
