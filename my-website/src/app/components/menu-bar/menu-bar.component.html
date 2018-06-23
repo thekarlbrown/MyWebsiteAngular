@@ -6,19 +6,19 @@
     </button>
     <div class="navbar-collapse collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item py-0"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item py-0"><a routerLink="/about" routerLinkActive="active" class="nav-link">About</a></li>
             <li class="nav-item py-0"><a href="http://thekarlbrown.com/Resume.pdf" target="_blank" class="nav-link">Resume</a></li>
-            <li class="nav-item py-0"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item py-0"><a routerLink="/blog" routerLinkActive="active" class="nav-link">Blog</a></li>
             <li class="nav-item dropdown final-item">
                 <a class="nav-link dropdown-toggle" href="http://thekarlbrown.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Projects
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Greed Algorithm <> Java</a>
+                  <a class="dropdown-item" routerLink="/projects/greed" routerLinkActive="active">Greed Algorithm <> Java</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Alexa Skills <> Python and AWS Lambda</a>
+                  <a class="dropdown-item" routerLink="/projects/alexa" routerLinkActive="active">Alexa Skills <> Python and AWS Lambda</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">eSports Team Captain</a>
+                  <a class="dropdown-item" routerLink="/projects/esports" routerLinkActive="active">eSports Team Captain</a>
                 </div>
               </li>
         </ul>
