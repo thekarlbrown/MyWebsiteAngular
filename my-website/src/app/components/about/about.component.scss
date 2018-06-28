@@ -10,6 +10,13 @@
     padding-bottom: 10px;
 }
 
-.profile-items {
-    
+.group-item-anchor {
+    padding-left: 10px;
+}
+
+.list-group-item {
+    display: flex; /* allows align-items to work below */
+    justify-content: center; /* Horizontally centers single-line elements */
+    text-align:center; /* Horizontally centers text within line-wrapped elements */
+    align-items: center; /* vertical */
 }
