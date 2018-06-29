@@ -12,7 +12,7 @@ import { BlogComponent } from './components/blog/blog.component';
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'projects/:post', component: ProjectsComponent },
+  { path: 'blog/:post', component: BlogComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: '',
     redirectTo: '/about',
