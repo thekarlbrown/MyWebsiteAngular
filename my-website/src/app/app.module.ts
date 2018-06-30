@@ -7,6 +7,7 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogService } from './services/blog.service';
 
 
 const appRoutes: Routes = [
@@ -28,15 +29,17 @@ const appRoutes: Routes = [
     MenuBarComponent,
     AboutComponent,
     ProjectsComponent,
-    BlogComponent
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {useHash: true})
   ],
-  providers: [],
+  providers: [
+    BlogService
+  ],
   bootstrap: [AppComponent],
   exports: [
     MenuBarComponent,
