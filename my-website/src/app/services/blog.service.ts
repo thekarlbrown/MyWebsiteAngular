@@ -30,7 +30,7 @@ export class BlogService {
 <br>
 </p>
 <br><p>
-General tactics for greed include deciding how riskily to play based on how many points you have compared to your opponent(s) and, in general, deciding when to take risks. With this in mind, I started thinking about how to best write this algorithm and realized that the best approach would be to isolate point values at which a certain decision would switch from being a favorable risk to an unfavorable risk. For example, how many points do you have to have before it becomes unwise to re-roll 4 available non-scoring dice?
+General tactics for Greed include deciding how riskily to play based on how many points you have compared to your opponent(s) and, in general, deciding when to take risks. With this in mind, I started thinking about how to best write this algorithm and realized that the best approach would be to isolate point values at which a certain decision would switch from being a favorable risk to an unfavorable risk. For example, how many points do you have to have before it becomes unwise to re-roll 4 available non-scoring dice?
 </p><br><p>
 Using this approach, I decided to write code that would create a configuration file that included values for each of these decision points. Then, using the configuration file, the algorithm knows how to make each of the Greed decisions and determine the resulting average points per round. Using this, you can determine whether the way you are making the decision positively or negatively affects the average points scored per round by comparing it to a simulation that uses different point values for those key decision points. To create my algorithm, I started by making a list of every decision I would take into consideration.
 </p><br><p>
